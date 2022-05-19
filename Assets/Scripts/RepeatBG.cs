@@ -22,6 +22,11 @@ public class RepeatBG : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetMouseButton(0)) {
+            speed = 4f;
+        } else {
+            speed = 3f;
+        }
         if (transform.position.y > height) {
             Reposition();
         }
