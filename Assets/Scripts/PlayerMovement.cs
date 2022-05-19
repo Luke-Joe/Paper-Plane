@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -21,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     {   
 
         if (Input.GetMouseButtonDown(0)) {
+            FindObjectOfType<audioManager>().Play("Flip");
             goingRight = !goingRight;
         }
 
@@ -40,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
+        FindObjectOfType<audioManager>().Play("PlayerDeath");
         gameManager.GameOver();
     }
 }
