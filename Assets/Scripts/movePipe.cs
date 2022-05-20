@@ -16,7 +16,7 @@ public class movePipe : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButton(0)) {
-            speed = 4f;
+            speed = 4.5f;
         } else {
             speed = 3f;
         }
