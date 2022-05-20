@@ -18,7 +18,7 @@ public class pipeSpawner : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButton(0)) {
-            spawnTime = 0.8f;
+            spawnTime = 0.66f;
         } else {
             spawnTime = 1f;
         }
