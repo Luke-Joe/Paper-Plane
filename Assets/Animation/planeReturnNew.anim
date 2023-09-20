@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: planeTurn
+  m_Name: planeReturnNew
   serializedVersion: 6
   m_Legacy: 1
   m_Compressed: 0
@@ -20,13 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 6c88d580ae3bde348a7ee4a77359306e, type: 3}
+      value: {fileID: 1852989051, guid: 2d00eb21e57055144992a765f96257fa, type: 3}
     - time: 0.0625
-      value: {fileID: 21300000, guid: 3a70a7904dfd202408ccbdb33e78d40f, type: 3}
+      value: {fileID: -225721000, guid: 2d00eb21e57055144992a765f96257fa, type: 3}
     - time: 0.125
-      value: {fileID: 21300000, guid: a62a2dd5fcc2367498c1498269e0dbff, type: 3}
-    - time: 0.1875
-      value: {fileID: 21300000, guid: 8b3f8d941b66b2f45939e42c04d15411, type: 3}
+      value: {fileID: -1855551402, guid: 2d00eb21e57055144992a765f96257fa, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,7 +42,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.25
+    m_StopTime: 0.1875
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

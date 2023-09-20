@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private bool goingRight;
     public Sprite planeDown;
     public Sprite planeDefault;
+
     void Start()
     {
         goingRight = true;
@@ -17,29 +18,37 @@ public class PlayerMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   
+    {
 
-        if (Input.GetMouseButtonDown(0)) {
+        if (Input.GetMouseButtonDown(0))
+        {
             FindObjectOfType<audioManager>().Play("Flip");
             goingRight = !goingRight;
         }
 
-        if (Input.GetMouseButton(0)) {
+        if (Input.GetMouseButton(0))
+        {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = planeDown;
-        } else {
-            if (goingRight == true) {
+        }
+        else
+        {
+            if (goingRight == true)
+            {
                 this.gameObject.GetComponent<SpriteRenderer>().sprite = planeDefault;
                 transform.Translate(Vector2.right * speed * Time.deltaTime);
-                transform.localScale = new Vector2(1, 1);
-            } else {
+                transform.localScale = new Vector2(0.5f, 0.5f);
+            }
+            else
+            {
                 this.gameObject.GetComponent<SpriteRenderer>().sprite = planeDefault;
                 transform.Translate(Vector2.left * speed * Time.deltaTime);
-                transform.localScale = new Vector2(-1, 1);
+                transform.localScale = new Vector2(-0.5f, 0.5f);
             }
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) {
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
         FindObjectOfType<audioManager>().Play("PlayerDeath");
         gameManager.GameOver();
     }

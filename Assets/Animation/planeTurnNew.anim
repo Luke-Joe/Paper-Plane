@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: planeTurn
+  m_Name: planeTurnNew
   serializedVersion: 6
   m_Legacy: 1
   m_Compressed: 0
@@ -20,13 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 6c88d580ae3bde348a7ee4a77359306e, type: 3}
+      value: {fileID: -580416792, guid: 71bb665586f47bb49850cfb619e88f35, type: 3}
     - time: 0.0625
-      value: {fileID: 21300000, guid: 3a70a7904dfd202408ccbdb33e78d40f, type: 3}
+      value: {fileID: -879148762, guid: 71bb665586f47bb49850cfb619e88f35, type: 3}
     - time: 0.125
-      value: {fileID: 21300000, guid: a62a2dd5fcc2367498c1498269e0dbff, type: 3}
+      value: {fileID: -543936675, guid: 2d00eb21e57055144992a765f96257fa, type: 3}
     - time: 0.1875
-      value: {fileID: 21300000, guid: 8b3f8d941b66b2f45939e42c04d15411, type: 3}
+      value: {fileID: -56897459, guid: 2d00eb21e57055144992a765f96257fa, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212

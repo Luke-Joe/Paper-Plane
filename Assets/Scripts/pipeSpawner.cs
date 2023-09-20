@@ -8,21 +8,12 @@ public class pipeSpawner : MonoBehaviour
     private float timer = 0;
     public GameObject pipe;
     public float width;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0)) {
-            spawnTime = 0.66f;
-        } else {
-            spawnTime = 1f;
-        }
-        if (timer > spawnTime) {
+        if (timer > spawnTime)
+        {
             GameObject newPipe = Instantiate(pipe);
             newPipe.transform.position = transform.position + new Vector3(Random.Range(-width, width), 0, 0);
             Destroy(newPipe, 15);
@@ -30,6 +21,6 @@ public class pipeSpawner : MonoBehaviour
         }
 
         timer += Time.deltaTime;
-        
+
     }
 }
